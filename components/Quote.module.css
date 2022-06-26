@@ -1,0 +1,78 @@
+.QuoteBox {
+  width: 100%;
+  padding: 0px;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .QuoteBox {
+    width: calc(100% - 6em);
+    padding: 1rem 3rem 0rem 3rem;
+  }
+}
+
+.QuoteBox__text {
+  margin: 0;
+  margin-bottom: 0.8em;
+  color: var(--yellow-color);
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 600;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .QuoteBox__text {
+    font-size: 3rem;
+  }
+}
+
+.QuoteBox__author {
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 0.2rem;
+
+  color: var(--white-color);
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 600;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .QuoteBox__author {
+    font-size: 1.5rem;
+  }
+}
+
+.QuoteBox__source {
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 2rem;
+
+  color: var(--white-color);
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 600;
+  text-align: left;
+}
+
+.QuoteBox__tweet {
+  display: inline-block;
+  margin-bottom: 1em;
+
+  color: var(--white-color);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+  text-align: left;
+  text-decoration: none;
+}
+.QuoteBox__tweet:hover {
+  color: var(--yellow-color);
+  text-decoration: underline;
+}
+
+.QuoteBox__tweet:focus {
+  outline: 2px dotted var(--yellow-color);
+  outline-offset: 5px;
+}
