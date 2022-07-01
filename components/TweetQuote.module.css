@@ -1,0 +1,18 @@
+.SwQuotes__tweet {
+  display: inline-block;
+  margin-bottom: 1em;
+
+  color: var(--white-color);
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 500;
+  text-align: left;
+}
+.SwQuotes__tweet:hover {
+  color: var(--yellow-color);
+}
+
+.SwQuotes__tweet:focus {
+  outline: 2px dotted var(--yellow-color);
+  outline-offset: 5px;
+}
