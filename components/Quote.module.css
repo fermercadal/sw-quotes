@@ -55,24 +55,3 @@
   font-weight: 600;
   text-align: left;
 }
-
-.QuoteBox__tweet {
-  display: inline-block;
-  margin-bottom: 1em;
-
-  color: var(--white-color);
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: 600;
-  text-align: left;
-  text-decoration: none;
-}
-.QuoteBox__tweet:hover {
-  color: var(--yellow-color);
-  text-decoration: underline;
-}
-
-.QuoteBox__tweet:focus {
-  outline: 2px dotted var(--yellow-color);
-  outline-offset: 5px;
-}

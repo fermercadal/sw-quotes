@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Quotes.module.css";
 import Quote from "../components/Quote";
+import TweetQuote from "./TweetQuote";
 
 const getRandomItem = (arrLength: number) => {
   return Math.floor(Math.random() * arrLength);
@@ -26,12 +27,18 @@ const Quotes = ({ quotesData }) => {
       <button
         className={styles.SwQuotes__new}
         onClick={() => {
-          const randomItem = getRandomItem(quotesData.length);
-          setSelectedItem(randomItem);
+          let randomItem = getRandomItem(quotesData.length);
+          setSelectedItem(
+            randomItem !== selectedItem ? randomItem : randomItem + 1
+          );
         }}
       >
         New quote
       </button>
+
+      <footer className={styles.SwQuotes__footer}>
+        {selectedItem && <TweetQuote {...quotesData[selectedItem]} />}
+      </footer>
     </div>
   );
 };
